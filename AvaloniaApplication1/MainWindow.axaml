@@ -2,8 +2,8 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="400"
-        Width="600" Height="400"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="600"
+        Width="600" Height="600"
         x:Class="AvaloniaApplication1.MainWindow"
         Title="AvaloniaApplication1">
         
@@ -23,10 +23,65 @@
                 <!-- Main are -->
                 <Grid Grid.Row="1" ColumnDefinitions="Auto, Auto, *" Background="#1a1c20">
                         <!-- Volume Bar -->
-                        <Grid Grid.Column="0" Width="140" RowDefinitions="*, Auto, Auto" Margin="0, 12">
-                                <Grid Grid.Row="0"></Grid>
+                        <Grid Grid.Column="0" Width="140" RowDefinitions="*, Auto, Auto" Margin="0, 15">
+                                <!-- Volume Meter -->
+                                <Grid Grid.Row="0" 
+                                      RowDefinitions="3*,3*,3*,9*,5*,4*,9*,9*,9*,6*,Auto"
+                                      ColumnDefinitions="Auto, *, Auto, Auto"
+                                      Margin="10, 0"
+                                      >
+                                        <!-- Left lines with metrics -->
+                                        <Grid.Styles>
+                                                <Style Selector="Label">
+                                                        <Setter Property="Foreground" Value="Azure"></Setter>
+                                                        <Setter Property="FontSize" Value="12"></Setter>
+                                                        <Setter Property="HorizontalAlignment" Value="Right"></Setter>
+                                                        <Setter Property="Padding" Value="0"></Setter>
+                                                </Style>
+                                        </Grid.Styles>
+                                        <Label Grid.Column="0" Grid.Row="0">0 —</Label>
+                                        <Label Grid.Column="0" Grid.Row="1">-3 —</Label>
+                                        <Label Grid.Column="0" Grid.Row="2">-6 —</Label>
+                                        <Label Grid.Column="0" Grid.Row="3">-9 —</Label>
+                                        <Label Grid.Column="0" Grid.Row="4">-18 —</Label>
+                                        <Label Grid.Column="0" Grid.Row="5">-23 —</Label>
+                                        <Label Grid.Column="0" Grid.Row="6">-27 —</Label>
+                                        <Label Grid.Column="0" Grid.Row="7">-36 —</Label>
+                                        <Label Grid.Column="0" Grid.Row="8">-45 —</Label>
+                                        <Label Grid.Column="0" Grid.Row="9">-54 —</Label>
+                                        <Label Grid.Column="0" Grid.Row="10"></Label>
+                                        
+                                        <!-- Volume Bar -->
+                                        <Grid Grid.Row="0" Grid.Column="1" Grid.RowSpan="11" RowDefinitions="23*, 37*" Width="20">
+                                                <Rectangle Grid.Row="0" Margin="0, 8, 0, -8" Fill="Salmon"></Rectangle>
+                                                <Rectangle Grid.Row="1" Margin="0, 8, 0, 0" Fill="Azure"></Rectangle>
+
+                                        </Grid>
+                                        
+                                        <!-- Right lines -->
+                                        <Label Grid.Column="2" Grid.Row="0">—</Label>
+                                        <Label Grid.Column="2" Grid.Row="1">—</Label>
+                                        <Label Grid.Column="2" Grid.Row="2">—</Label>
+                                        <Label Grid.Column="2" Grid.Row="3">—</Label>
+                                        <Label Grid.Column="2" Grid.Row="4">—</Label>
+                                        <Label Grid.Column="2" Grid.Row="5">—</Label>
+                                        <Label Grid.Column="2" Grid.Row="6">—</Label>
+                                        <Label Grid.Column="2" Grid.Row="7">—</Label>
+                                        <Label Grid.Column="2" Grid.Row="8">—</Label>
+                                        <Label Grid.Column="2" Grid.Row="9">—</Label>
+                                        <Label Grid.Column="2" Grid.Row="10"></Label>
+                                        
+                                        <!-- Arrow -->
+                                        <Canvas Grid.Row="0" Grid.RowSpan="11" Grid.Column="3" Width="16">
+                                                <Rectangle Canvas.Top="0" Canvas.Left="2" Height="20" Width="15" Fill="Azure"></Rectangle>
+                                        </Canvas>
+                                        
+                                </Grid>
+                                
+                                <!-- LUFS label -->
                                 <Label Grid.Row="1" Margin="0, 5" HorizontalAlignment="Center" Foreground="White" FontSize="18">LUFS</Label>
                                 
+                                <!-- Volume bar bottom buttons -->
                                 <StackPanel Grid.Row="2" HorizontalAlignment="Center" Orientation="Horizontal">
                                         <StackPanel.Styles>
                                                 <Style Selector="Button">
