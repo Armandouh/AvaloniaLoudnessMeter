@@ -66,3 +66,10 @@
 /Users/armanaslanyan/Desktop/avalonia/AvaloniaApplication1/AvaloniaApplication1/obj/Debug/net8.0/AvaloniaApplication1.genruntimeconfig.cache
 /Users/armanaslanyan/Desktop/avalonia/AvaloniaApplication1/AvaloniaApplication1/obj/Debug/net8.0/ref/AvaloniaApplication1.dll
 /Users/armanaslanyan/Desktop/avalonia/AvaloniaApplication1/AvaloniaApplication1/obj/Debug/net8.0/AvaloniaApplication1.sourcelink.json
+/Users/armanaslanyan/Desktop/avalonia/AvaloniaApplication1/AvaloniaApplication1/bin/Debug/net8.0/Avalonia.Svg.Skia.dll
+/Users/armanaslanyan/Desktop/avalonia/AvaloniaApplication1/AvaloniaApplication1/bin/Debug/net8.0/ExCSS.dll
+/Users/armanaslanyan/Desktop/avalonia/AvaloniaApplication1/AvaloniaApplication1/bin/Debug/net8.0/ShimSkiaSharp.dll
+/Users/armanaslanyan/Desktop/avalonia/AvaloniaApplication1/AvaloniaApplication1/bin/Debug/net8.0/SkiaSharp.HarfBuzz.dll
+/Users/armanaslanyan/Desktop/avalonia/AvaloniaApplication1/AvaloniaApplication1/bin/Debug/net8.0/Svg.Custom.dll
+/Users/armanaslanyan/Desktop/avalonia/AvaloniaApplication1/AvaloniaApplication1/bin/Debug/net8.0/Svg.Model.dll
+/Users/armanaslanyan/Desktop/avalonia/AvaloniaApplication1/AvaloniaApplication1/bin/Debug/net8.0/Svg.Skia.dll
