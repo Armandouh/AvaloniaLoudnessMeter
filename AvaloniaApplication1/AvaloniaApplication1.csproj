@@ -34,5 +34,8 @@
       <AvaloniaResource Include="Assets\Images\Monitor.svg" />
       <None Remove="Assets\Images\ShareButton.svg" />
       <AvaloniaResource Include="Assets\Images\ShareButton.svg" />
+      <None Remove="Assets\Images\monitor2.svg" />
+      <None Remove="Assets\Images\Export.svg" />
+      <AvaloniaResource Include="Assets\Images\Export.svg" />
     </ItemGroup>
 </Project>
