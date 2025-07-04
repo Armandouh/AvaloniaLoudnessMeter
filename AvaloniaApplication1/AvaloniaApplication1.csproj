@@ -37,5 +37,7 @@
       <None Remove="Assets\Images\monitor2.svg" />
       <None Remove="Assets\Images\Export.svg" />
       <AvaloniaResource Include="Assets\Images\Export.svg" />
+      <None Remove="Assets\Images\Skip.svg" />
+      <AvaloniaResource Include="Assets\Images\Skip.svg" />
     </ItemGroup>
 </Project>
