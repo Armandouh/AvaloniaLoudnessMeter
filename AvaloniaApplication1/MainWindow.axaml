@@ -144,20 +144,26 @@
                         <Setter Property="Margin" Value="8, 0"></Setter>
                     </Style>
                 </StackPanel.Styles>
-                <controls:LargeLabelControl Margin="8,8,8,0" LargeText="Large" SmallText="small"></controls:LargeLabelControl>
-                <controls:LargeLabelControl Background="{DynamicResource GrayishBlueBrush}"></controls:LargeLabelControl>
-                <controls:LargeLabelControl></controls:LargeLabelControl>
-                <controls:LargeLabelControl></controls:LargeLabelControl>
-                <controls:LargeLabelControl></controls:LargeLabelControl>
+                <StackPanel.Styles>
+                    <Style Selector="controls|LargeLabelControl.button">
+                        <Setter Property="Margin" Value="8, 0"></Setter>
+                        <Setter Property="Width" Value="150"></Setter>
+                    </Style>
+                </StackPanel.Styles>
+                <controls:LargeLabelControl LargeText="-21.5 LUFS" SmallText="SHORT TERM" Margin="8,24,8,0"></controls:LargeLabelControl>
+                <controls:LargeLabelControl LargeText="-21.9 LUFS" SmallText="INTEGRATED" Background="{DynamicResource GrayishBlueBrush}"></controls:LargeLabelControl>
+                <controls:LargeLabelControl LargeText="8.8 LU" SmallText="LOUDNESS RANGE"></controls:LargeLabelControl>
+                <controls:LargeLabelControl LargeText="16.3 LU" SmallText="REALTIME DYNAMICS"></controls:LargeLabelControl>
+                <controls:LargeLabelControl LargeText="21.8 LU" SmallText="AVG. DYNAMICS (PLR)"></controls:LargeLabelControl>
 
-                <controls:LargeLabelControl Classes="button" Margin="8, 12, 8, 0"></controls:LargeLabelControl>
-                <controls:LargeLabelControl Classes="button"></controls:LargeLabelControl>
-                <controls:LargeLabelControl Classes="button"></controls:LargeLabelControl>
+                <controls:LargeLabelControl Classes="button" LargeText="-11.8 LUFS" SmallText="MOMENTARY MAX" Margin="8, 20, 8, 0"></controls:LargeLabelControl>
+                <controls:LargeLabelControl Classes="button" LargeText="-19.8 LUFS" SmallText="SHORT TERM MAX"></controls:LargeLabelControl>
+                <controls:LargeLabelControl Classes="button" LargeText="-0.3 dB" SmallText="TRUE PEAK MAX"></controls:LargeLabelControl>
 
 
-                <StackPanel Grid.Row="2" HorizontalAlignment="Center" Orientation="Horizontal" Margin="0, 35, 0, 0">
-                    <Button Classes="small" Margin="0, 0, 10, 0">Auto</Button>
-                    <Button Classes="small" Height="25" Width="25" Background="{DynamicResource FadedRedBrush}" Padding="3">
+                <StackPanel Grid.Row="2" HorizontalAlignment="Center" Orientation="Horizontal" Margin="13">
+                    <Button Classes="small" Height="25" Margin="0, 0, 10, 0">AUTO</Button>
+                    <Button Margin="7, 0, 0, 0" Classes="small" Height="25" Width="25" Background="{DynamicResource FadedRedBrush}" Padding="3">
                         <Image Margin="5, 0, 3, 0" Source="{SvgImage /Assets/Images/Skip.svg}" />
                     </Button>
                 </StackPanel>

@@ -18,8 +18,8 @@
             <ControlTemplate>
                 <Border Background="{TemplateBinding Background}">
                     <StackPanel>
-                        <Label HorizontalAlignment="Center" FontSize="25" Content="{TemplateBinding LargeText}" />
-                        <Label HorizontalAlignment="Center" Content="{TemplateBinding SmallText}" />
+                        <Label Padding="5, 7, 5, 0" HorizontalAlignment="Center" FontSize="23" Content="{TemplateBinding LargeText}" />
+                        <Label FontSize="11.5" HorizontalAlignment="Center" Content="{TemplateBinding SmallText}" />
                     </StackPanel>
                 </Border>
             </ControlTemplate>
@@ -29,12 +29,13 @@
     <Style Selector="controls|LargeLabelControl.button">
         <!-- Set Defaults -->
         <Setter Property="Foreground" Value="White"></Setter>
+        <Setter Property="Width" Value="150"></Setter>
         <Setter Property="Background" Value="{DynamicResource MidBlueBrush}"></Setter>
         <Setter Property="Template">
             <ControlTemplate>
                 <StackPanel>
-                    <Label Padding="15, 3" CornerRadius="20" Background="{TemplateBinding Background}" HorizontalAlignment="Center" FontSize="25" Content="{TemplateBinding LargeText}" />
-                    <Label Margin="0, 4, 0, 0" HorizontalAlignment="Center" Content="{TemplateBinding SmallText}" />
+                    <Label Height="30" Padding="15, 0, 15, 0" CornerRadius="20" Background="{TemplateBinding Background}" HorizontalAlignment="Center" FontSize="23" Content="{TemplateBinding LargeText}" />
+                    <Label HorizontalAlignment="Center" FontSize="11.5" Content="{TemplateBinding SmallText}" />
                 </StackPanel>
             </ControlTemplate>
         </Setter>
