@@ -39,5 +39,7 @@
       <AvaloniaResource Include="Assets\Images\Export.svg" />
       <None Remove="Assets\Images\Skip.svg" />
       <AvaloniaResource Include="Assets\Images\Skip.svg" />
+      <None Remove="Assets\Images\Cross.svg" />
+      <AvaloniaResource Include="Assets\Images\Cross.svg" />
     </ItemGroup>
 </Project>
